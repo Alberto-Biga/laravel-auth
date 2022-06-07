@@ -80,8 +80,10 @@
             @endif
 
             <div class="content">
-                pagina in costruzione
+                
                 <div id="root"></div>
+                pagina in costruzione
+
             </div>
         </div>
 
