@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Benvenuto</div>
+                    <Header/>
 
                     <div class="card-body">
                         Ci dispiace ma..
@@ -15,5 +15,11 @@
 </template>
 
 <script>
-    name:"App";
+    import Header from "./Header.vue"
+    export default {
+        name: "App",
+        components:{
+            Header
+        }
+    }
 </script>
