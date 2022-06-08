@@ -36,7 +36,7 @@
                     </td>
                     <td class="d-flex">
                         <a href=" {{route('admin.posts.show', $post->id)}} " class="btn btn-primary">View</a>
-                        <form action=" {{route('admin.posts.destroy', $post->id)}} " method="POST">
+                        <form action=" {{route('admin.posts.destroy', $post->id)}} " method="POST" class="delete-form" >
                             @method('DELETE')
                             @csrf
                             <button type="submit" class="btn btn-danger">Delete</button>
@@ -45,10 +45,19 @@
                     
                 </tr>    
             @empty
-                
+                <h1>Niente POSTs!</h1>
             @endforelse
             
         </tbody>
     </table>
 </div>
+
+
+
 @endsection
+
+@section('scripts')
+
+@endsection
+
+

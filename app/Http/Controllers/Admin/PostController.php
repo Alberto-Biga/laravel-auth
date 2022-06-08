@@ -84,6 +84,6 @@ class PostController extends Controller
     {
         $post ->delete();
         return redirect()->route('admin.posts.index')->
-        with('message', "Il Post $post->title e' stato correttamente eliminato");
+        with('message', "Il Post ``$post->title`` e' stato correttamente eliminato");
     }
 }
