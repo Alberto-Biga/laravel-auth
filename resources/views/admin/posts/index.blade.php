@@ -9,6 +9,8 @@
         </div>
     @endif
 
+    <a href=" {{route('admin.posts.create')}} " class="btn btn-success">Crea un nuovo Post</a>
+
     <table class="table table-dark">
         <thead>
             <tr>
@@ -56,8 +58,8 @@
 
 @endsection
 
-@section('scripts')
-
+@section('script')
+    <script src=" {{ asset('js/delete-form.js') }} "></script>
 @endsection
 
 
