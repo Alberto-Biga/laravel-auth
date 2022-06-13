@@ -43,6 +43,8 @@
                             @csrf
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
+
+                        <a href=" {{route('admin.posts.edit', $post->id)}} " class="btn btn-primary">Edit</a>
                     </td>
                     
                 </tr>    
